@@ -115,7 +115,7 @@ var questions = [
 ]
 
 
-var min = 5
+var min = 4
 var sec = 60
 
 var mins = document.getElementById("min")
@@ -239,7 +239,7 @@ function change() {
 
             var cond = document.getElementById("condition")
 
-            if (score <= 60 || min === 0) {
+            if (score < 60 || min === 0) {
                 clearInterval(timer())
                 cond.innerHTML = "Result = Fail"
             }
